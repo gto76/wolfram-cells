@@ -34,19 +34,31 @@ object WcUtil {
 		sb.toString
 	}
 	
+	def magnifyImage(imgIn: BufferedImage, factor: Int): BufferedImage = {
+		if (factor == 1) return imgIn
+		var imgOut = getNewImage(imgIn.getWidth * factor, imgIn.getHeight * factor)
+		for (i <- 0 to imgOut.getHeight()-1) {
+	        for (j <- 0 to imgOut.getWidth()-1) {
+	        	val rgb = imgIn.getRGB(j/factor, i/factor)
+	        	imgOut.setRGB(j, i, rgb)
+	        }
+	    }
+	    imgOut
+	}
+	
 	/*
 	 * CONVERSIONS:
 	 */
     
-    def matrixToImage(matrix: Array[Array[Boolean]]) = {
+    def matrixToImage(matrix: Array[Array[Boolean]], background: Int, foreground: Int) = {
         var img = getNewImage(matrix(0).size, matrix.size)
         var x, y = 0;
         for (row <- matrix) {
 	        for (element <- row) {
 	        	if (element == true)
-	        		img.setRGB(x, y, 255)
+	        		img.setRGB(x, y, foreground) 
 	        	else
-	        		img.setRGB(x, y, 0)
+	        		img.setRGB(x, y, background)
 	        	x = x + 1
 	        }
 	        x = 0
@@ -62,8 +74,8 @@ object WcUtil {
     	///
     	for (i <- 0 to height-1) {
 	        for (j <- 0 to width-1) {
-	        	if (image.getRGB(i, j) != 0) {
-	        		matrix(i)(j) = true
+	        	if (image.getRGB(j, i) != 0) {
+	        		matrix(i)(j) = true // TODO test!!
 	        	}
 	        }
 	    }
