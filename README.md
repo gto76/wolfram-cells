@@ -6,22 +6,19 @@ Wolfram random patterns generator
 How to run:
 -----------
 
-Install Scala:
 ```bash
-wget http://downloads.typesafe.com/scala/2.11.1/scala-2.11.1.tgz
-tar xvzf scala-2.11.1.tgz
-export SCALA_HOME="$PWD/scala-2.11.1"
-export PATH="$PATH:$SCALA_HOME/bin"
-```
+# Install Scala:
+SCALA_VERSION="2.11.1";
+wget http://downloads.typesafe.com/scala/$SCALA_VERSION/scala-$SCALA_VERSION.tgz
+tar xvzf scala-$SCALA_VERSION.tgz
+sudo sh -c 'echo "export SCALA_HOME=\"$PWD/scala-'$SCALA_VERSION'\"" >> /etc/profile; echo "export PATH=\"\$PATH:\$SCALA_HOME/bin\"" >> /etc/profile;'
+sh /etc/profile
 
-Install sbt (scala build tool):
-```bash
+# Install sbt (scala build tool):
 wget http://dl.bintray.com/sbt/debian/sbt-0.13.5.deb
 sudo dpkg -i sbt-0.13.5.deb
-```
 
-Clone, build and run:
-```bash
+# Clone, build and run:
 git clone https://www.github.com/gto76/wolfram-cells.git
 cd wolfram-cells
 sbt assembly
