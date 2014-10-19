@@ -41,7 +41,7 @@ object Cli {
   }
 
   /*
-   * 2. SET PARAMETERS
+   * 2. SET PARAMETERS 
    */
 
   def setParameters(cmd: org.apache.commons.cli.CommandLine): (Boolean, Boolean, Int, String, String, Int, Int, Boolean, Int, Int, Int) = {
