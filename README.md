@@ -3,6 +3,10 @@ Wolfram Cells
 
 [Wolfram] (https://www.youtube.com/watch?v=jDguxopxyJk) random patterns generator, using one-dimensional binary cellular automata.
 
+![Alt text](/doc/wolfram.png?raw=true "Image of the random pattern")
+
+[rule 110] (http://en.wikipedia.org/wiki/Rule_110)
+
 How to run:
 -----------
 
