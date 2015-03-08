@@ -17,7 +17,7 @@ How to run:
 3. Open command prompt, go to extracted project and execute these commands:
 
 >```bat
-setx PATH=%PATH%;C:\Program Files (x86)\sbt\bin
+setx PATH "%PATH%;C:\Program Files (x86)\sbt\bin"
 sbt assembly
 java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
 ```
