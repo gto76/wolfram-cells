@@ -33,8 +33,8 @@ sudo sh -c 'echo "export SCALA_HOME=\"$PWD/scala-'$SCALA_VERSION'\"" >> /etc/pro
 sh /etc/profile
 
 # Install sbt (scala build tool):
-wget http://dl.bintray.com/sbt/debian/sbt-0.13.5.deb
-sudo dpkg -i sbt-0.13.5.deb
+wget http://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
+sudo dpkg -i sbt-0.13.7.deb
 
 # Clone, build and run:
 git clone https://www.github.com/gto76/wolfram-cells.git
