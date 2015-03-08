@@ -10,6 +10,20 @@ Wolfram Cells
 How to run:
 -----------
 
+### Windows
+
+1. Download and install [sbt](https://dl.bintray.com/sbt/native-packages/sbt/0.13.7/sbt-0.13.7.msi)
+2. Download and extract project's [ZIP](https://github.com/gto76/wolfram-cells/archive/master.zip)
+3. Open command prompt, go to extracted project and execute these commands:
+
+>```bat
+setx PATH=%PATH%;C:\Program Files (x86)\sbt\bin
+sbt assembly
+java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
+```
+
+### UNIX
+
 ```bash
 # Install Scala:
 SCALA_VERSION="2.11.1";
