@@ -7,8 +7,8 @@ Wolfram Cells
 
 [rule 110] (http://en.wikipedia.org/wiki/Rule_110)
 
-How to run:
------------
+How to run
+----------
 
 ### Windows
 
@@ -33,8 +33,8 @@ sbt assembly
 java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
 ```
 
-Man:
-----
+Man
+---
 ```
 usage: wolfram-cells
  -b,--bitmap                   Outupt image instead of text.
