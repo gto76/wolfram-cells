@@ -16,7 +16,7 @@ How to run on…
 2. Download and extract project's [ZIP](https://github.com/gto76/wolfram-cells/archive/master.zip)
 3. Open command prompt, go to extracted project and execute these commands:
 
->```bat
+>```
 setx PATH "%PATH%;C:\Program Files (x86)\sbt\bin"
 sbt assembly
 java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
@@ -24,13 +24,13 @@ java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar
 
 ### UNIX
 
-```bash
-wget http://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
-sudo dpkg -i sbt-0.13.7.deb
-git clone https://www.github.com/gto76/wolfram-cells.git
-cd wolfram-cells
-sbt assembly
-java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
+```
+$ wget http://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
+$ sudo dpkg -i sbt-0.13.7.deb
+$ git clone https://www.github.com/gto76/wolfram-cells.git
+$ cd wolfram-cells
+$ sbt assembly
+$ java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
 ```
 
 Options
