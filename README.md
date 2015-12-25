@@ -5,7 +5,7 @@ Wolfram Cells
 
 ![Alt text](/doc/wolfram.png?raw=true "Image of the random pattern")
 
-[rule 110] (http://en.wikipedia.org/wiki/Rule_110)
+##### [rule 110] (http://en.wikipedia.org/wiki/Rule_110)
 
 How to run on…
 --------------
