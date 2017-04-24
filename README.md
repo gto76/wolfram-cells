@@ -1,11 +1,11 @@
 Wolfram Cells
 =============
 
-[Wolfram] (https://www.youtube.com/watch?v=jDguxopxyJk) random patterns generator, using one-dimensional binary cellular automata.
+[Wolfram](https://www.youtube.com/watch?v=jDguxopxyJk) random patterns generator, using one-dimensional binary cellular automata.
 
 ![Alt text](/doc/wolfram.png?raw=true "Image of the random pattern")
 
-##### [rule 110] (http://en.wikipedia.org/wiki/Rule_110)
+#### [Rule 110](http://en.wikipedia.org/wiki/Rule_110)
 
 How to run on…
 --------------
@@ -16,7 +16,7 @@ How to run on…
 2. Download and extract project's [ZIP](https://github.com/gto76/wolfram-cells/archive/master.zip)
 3. Open command prompt, go to extracted project and execute these commands:
 
->```
+```
 setx PATH "%PATH%;C:\Program Files (x86)\sbt\bin"
 sbt assembly
 java -jar target/scala-2.11/wolfram-cells-assembly-0.9.0.jar 
